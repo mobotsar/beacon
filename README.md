@@ -16,14 +16,14 @@ A native and a cross platform guide for BQN array programming language.
 
 ## Linux/MacOS instructions
 ```sh
-> git clone https://github.com/x86y/beacon
-> cd beacon
-> cargo run --release
+$ git clone https://github.com/x86y/beacon
+$ cd beacon
+$ cargo run --release
 ```
 
 Alternatively, a nix flake is provided:
 
-``` console
+```sh
 $ git clone https://github.com/x86y/beacon
 $ cd beacon
 $ nix run   # Alternatively: nix develop -c cargo run --release
@@ -31,9 +31,9 @@ $ nix run   # Alternatively: nix develop -c cargo run --release
 
 ## Windows instructions
 ```sh
-> git clone https://github.com/x86y/beacon
-> cd beacon
-> BQN_WASM=./BQN.wasm cargo run --release --no-default-features --features=bqnwasm
+$ git clone https://github.com/x86y/beacon
+$ cd beacon
+$ BQN_WASM=./BQN.wasm cargo run --release --no-default-features --features=bqnwasm
 ```
 
 The code relies a lot on detegr's bqn bindings, and uses tooltip documentation files from his bqnlsp/genhelp tool! Check it out at:
